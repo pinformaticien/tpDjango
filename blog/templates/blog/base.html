@@ -1,0 +1,13 @@
+{% extends 'layouts/base.html' %}
+
+{% load static %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{% static 'blog/css/styles.css' %}">
+{% endblock stylesheets %}
+
+{% block content %}
+    <h1>Blog</h1>
+
+    {% block body %}{% endblock body %}
+{% endblock content %}
